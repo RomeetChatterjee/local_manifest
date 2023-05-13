@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="main" fetch="https://github.com/RomeetChatterjee" />
+  <remote name="ImSurajxD" fetch="https://gitlab.com/ImSurajxD" />
+  <remote name="display" fetch="https://github.com/xdsolraC" />
+  <remote name="ob" fetch="https://gitlab.com/onettboots" />
+  <remote name="ds" fetch="https://github.com/LineageOS" />
+
+ <!--Removals-->
+ <remove-project name="LineageOS/android_hardware_qcom_display" />
+  
+ <!-- Display -->
+ <project path="hardware/qcom-caf/sm8150/display" name="hardware_qcom_display" remote="display" revision="12-sm8150" clone-depth="1" /> 
+  
+ <!--Removals-->
+ <remove-project name="LineageOS/android_packages_resources_devicesettings" /> 
+ 
+ <!-- DeviceSettings -->
+ <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="ds" revision="lineage-20.0" clone-depth="1" /> 
+    
+ <!-- Device Trees -->
+ <project path="device/xiaomi/raphael" name="device_xiaomi_raphael" remote="main" revision="pos" clone-depth="1" />
+  
+ <!-- Kernel Trees-->
+ <project path="kernel/xiaomi/raphael" name="boolx_xiaomi_raphael" remote="main" revision="saaya1" clone-depth="1" />
+  
+ <!-- Vendor Tree -->
+ <project path="vendor/xiaomi/raphael" name="vendor_xiaomi_raphael" remote="main" revision="thirteen" clone-depth="1" />
+
+  <!-- Clang -->
+ <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="ImSurajxD" revision="master" clone-depth="1" />
+ 
+ <!-- Clang -->
+ <project path="prebuilts/clang/host/linux-x86/boolx-clang" name="boolx-clang" remote="ob" revision="Clang-15.0" clone-depth="1" />
+ 
+</manifest>
