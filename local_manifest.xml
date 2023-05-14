@@ -6,7 +6,11 @@
   <remote name="display" fetch="https://github.com/xdsolraC" />
   <remote name="ob" fetch="https://gitlab.com/onettboots" />
   <remote name="ds" fetch="https://github.com/LineageOS" />
-
+  <remote name="hardware" fetch="https://github.com/LineageOS" />
+  
+  <!-- Hardware -->
+ <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="hardware" revision="lineage-20" clone-depth="1" />
+  
  <!--Removals-->
  <remove-project name="LineageOS/android_hardware_qcom_display" />
   
