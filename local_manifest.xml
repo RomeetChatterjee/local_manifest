@@ -32,7 +32,7 @@
  <!-- Vendor Tree -->
  <project path="vendor/xiaomi/raphael" name="vendor_xiaomi_raphael" remote="main" revision="13" clone-depth="1" />
 
-  <!-- Clang -->
+ <!-- Clang -->
  <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="ImSurajxD" revision="master" clone-depth="1" />
   
  
